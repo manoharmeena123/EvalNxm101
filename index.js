@@ -12,9 +12,9 @@ const {postRouter} = require("./routes/post.model")
 const {userRouter} = require("./routes/user.route")
 const { authenticate } = require("./middleware/auth.middleware");
 // const {logger} = require("./middleware/logger")
-// app.use(cors({
-//     origin:"*"
-// }))
+app.use(cors({
+    origin:"*"
+}))
 app.get("/",(req,res)=>{
     res.json("WELCOME")
 })
